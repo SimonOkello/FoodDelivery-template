@@ -17,7 +17,14 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
-
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: ".";
+    display:block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
 /*------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*------------------------------*/
@@ -32,11 +39,35 @@ section{
 .box{
     padding: 1%;
 }
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+/*-----ICONS-----*/ 
+
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color: #e99e13;
+    margin-bottom: 15px;
+}
+.icon-small{
+    display: inline-block;
+    color: #e99e13;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    /* how to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
 /*-----HEADINGS-----*/
-h1,h2{
+h1,h2,h3{
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
    
 }
 h1{
@@ -45,12 +76,19 @@ h1{
     font-size: 240%;
     margin-bottom: 20px;
     word-spacing: 4px;
+    letter-spacing: 1px;
 }
 h2{
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: 100%;
+    margin-bottom: 15px;
+    
 }
 h2:after{
 display: block;
@@ -68,6 +106,20 @@ margin-top: 30px;
     width: 70%;
     margin-left: 15%;
 }
+/*-----LINKS-----*/
+a:link, a:visited{
+   color: #e99e13;
+   text-decoration: none;
+   border-bottom: 1px solid #e99e13;
+   padding-bottom: 1px;
+}
+a:hover,
+a:active{
+    color: #555555;
+    border: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s; 
+}
+
 /*-----BUTTONS-----*/
 .btn:link, .btn:visited{
     display: inline-block;
@@ -133,6 +185,7 @@ header{
     margin-left: 40px;
 
 }
+
 .main-nav li a:link,
 .main-nav li a:visited{
     padding: 8px 0;
@@ -146,4 +199,107 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e99e13;
+}
+
+/*------------------------------*/
+/*FEATURES*/
+/*------------------------------*/ 
+.features .ft-paragraph{
+margin-bottom: 30px;
+}
+
+/*------------------------------*/
+/*MEALS*/
+/*------------------------------*/
+.fav-meals{
+    padding: 0;
+}
+.meals{
+    list-style: none;
+    width: 100%;
+
+}
+.meals li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.photo{ 
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+.photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+.photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+
+} 
+
+/*------------------------------*/
+/*HOW-IT-WORKS*/
+/*------------------------------*/
+.how-it-works{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+text-align: right;
+padding: 3%;
+margin-top: 30px;
+}
+.steps-box:last-child{
+text-align: left;
+margin-top: 70px;
+
+}
+.app-screen{
+    width: 40%;
+}
+.steps{
+    margin-bottom: 50px;
+}
+.steps :last-of-type{
+margin-bottom: 80px;
+}
+.steps div{
+    float: left;
+    color: #e99e13;
+    border: 2px solid #e99e13;
+    display: inline-block;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding: 5px;
+    font-size: 120%;
+    margin-right: 25px;
+
+}
+.btn-app img{
+height: 50px;
+width: auto;
+margin-right: 10px;
+}
+.btn-app:link{
+    border: 0;
+}
+
+/*------------------------------*/
+/*TOWNS*/
+/*------------------------------*/
+.box img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.town-stats{
+    margin-bottom: 5px;
 }

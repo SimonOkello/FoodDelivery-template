@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FoodPro</title>
+    <title>Omnifood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!--header-->
+    <!--start header-->
 
     <header>
         <nav>
@@ -30,13 +30,14 @@
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a href="#" class="btn btn-full">I'm hungry</a>
+            <a href="#signup" class="btn btn-full">I'm hungry</a>
             <a href="#" class="btn btn-ghost">Show me more</a>
 
         </div>
     </header>
-    <!-- end of header-->
+    <!-- end header-->
 
+    <!-- start features section-->
     <section class="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
@@ -46,28 +47,28 @@
                 us take care of that, we’re really good at it, we promise!</p>
         </div>
         <div class="row">
-            <div class="col span-1-of-4 box">
-                <ion-icon name="infinite"></ion-icon>
+            <div class="col span-1-of-4 box ">
+                <ion-icon name="infinite" class="icon-big"></ion-icon>
                 <h3>Up to 365 days/year</h3>
                 <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
                     You can also choose
                     to order more flexibly if that's your style.</p>
             </div>
             <div class="col span-1-of-4 box">
-                <ion-icon name="alarm"></ion-icon>
+                <ion-icon name="alarm" class="icon-big"></ion-icon>
                 <h3>Ready in 20 minutes</h3>
                 <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to
                     yourhome. We work with the best chefs in each town to ensure that you're 100% happy.</p>
             </div>
             <div class="col span-1-of-4 box">
-                <ion-icon name="nutrition"></ion-icon>
+                <ion-icon name="nutrition" class="icon-big"></ion-icon>
                 <h3>100% organic</h3>
                 <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or
                     antibiotics. Good for your
                     health, the environment, and it also tastes better!</p>
             </div>
             <div class="col span-1-of-4 box">
-                <ion-icon name="cart"></ion-icon>
+                <ion-icon name="cart" class="icon-big"></ion-icon>
                 <h3>Order anything</h3>
                 <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose
                     from our menu
@@ -75,134 +76,170 @@
             </div>
         </div>
     </section>
+    <!-- end features section-->
+
+    <!-- start fav-meals section-->
     <section class="fav-meals">
-        <ul class="">
+        <ul class="meals clearfix">
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/1.jpg" alt="Korean bibimbap with egg and vegetables">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/2.jpg" alt="Simple italian pizza with cherry tomatoes">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/3.jpg" alt="Chicken breast steak with vegetables ">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/4.jpg" alt="Autumn pumpkin soup">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/5.jpg" alt="Paleo beef steak with vegetables">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/6.jpg" alt="Healthy baguette with egg and vegetables">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/7.jpg" alt="Burger with cheddar and bacon">
                 </figure>
             </li>
             <li>
-                <figure>
+                <figure class="photo">
                     <img src="resources/images/8.jpg" alt="Granola with cherries and strawberries">
                 </figure>
             </li>
         </ul>
 
     </section>
+    <!-- end fav-meals section-->
+
+    <!-- start how-it-works section-->
     <section class="how-it-works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
-        <div>
-            <img src="resources/images/app-iPhone.png" alt="FoodPro app on Iphone">
-        </div>
-        <div class="">
-            <div class="">
-                <div>1</div>
-                <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="resources/images/app-iPhone.png" alt="Omnifood app on Iphone" class="app-screen">
             </div>
-            <div class="">
-                <div>2</div>
-                <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+
+            <div class="col span-1-of-2 steps-box">
+                <div class="steps">
+                    <div>1</div>
+                    <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                </div>
+                <div class="steps">
+                    <div>2</div>
+                    <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                </div>
+                <div class="steps">
+                    <div>3</div>
+                    <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                </div>
+                <a href="#" class="btn-app"><img src="resources/images/download-app.svg" alt="App Store Button"></a>
+                <a href="#" class="btn-app"><img src="resources/images/download-app-android.png"
+                        alt="Play Store Button"></a>
             </div>
-            <div class="">
-                <div>3</div>
-                <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
-            </div>
-            <a href="#"><img src="resources/images/download-app.svg" alt="App Store Button"></a>
-            <a href="#"><img src="resources/images/download-app-android.png" alt="Play Store Button"></a>
         </div>
     </section>
-    <section class="cities">
+
+    <!-- start how-it-works section-->
+
+
+    <!-- start towns section-->
+    <section class="towns">
         <div class="row">
             <h2>We're currently in these towns</h2>
         </div>
         <div class="row">
-            <div class="">
+            <div class="col span-1-of-4 box">
                 <img src="resources/images/lisbon-3.jpg" alt="Parklands">
                 <h3>Parklands</h3>
+
+                <div class="town-stats">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    100+ happy eaters
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    5 Top chefs
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                   <a href="#">@foodpro_pkl</a> 
+                </div>
             </div>
-            <div>
-                100+ happy eaters
-            </div>
-            <div>
-                5 Top chefs
-            </div>
-            <div>
-                @foodpro_pkl
-            </div>
-            <div class="">
+            <div class="col span-1-of-4 box">
                 <img src="resources/images/san-francisco.jpg" alt="Nairobi west">
                 <h3>Nairobi West</h3>
+
+                <div class="town-stats">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    300+ happy eaters
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    4 Top chefs
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="#">@foodpro_nrbw</a>  
+                </div>
             </div>
-            <div>
-                300+ happy eaters
-            </div>
-            <div>
-                4 Top chefs
-            </div>
-            <div>
-                @foodpro_nrbw
-            </div>
-            <div class="">
+            <div class="col span-1-of-4 box">
                 <img src="resources/images/berlin.jpg" alt="Eastlands">
                 <h3>Eastlands</h3>
+
+                <div class="town-stats">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    200+ happy eaters
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    7 Top chefs
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                   <a href="#">@foodpro_esl</a>
+                </div>
             </div>
-            <div>
-                200+ happy eaters
-            </div>
-            <div>
-                7 Top chefs
-            </div>
-            <div>
-                @foodpro_esl
-            </div>
-            <div class="">
+            <div class="col span-1-of-4 box">
                 <img src="resources/images/london.jpg" alt="Mombasa">
                 <h3>Mombasa</h3>
-            </div>
-            <div>
-                500+ happy eaters
-            </div>
-            <div>
-                20 Top chefs
-            </div>
-            <div>
-                @foodpro_mbsa
+
+                <div class="town-stats">
+                    <ion-icon name="person" class="icon-small"></ion-icon>
+                    500+ happy eaters
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="star" class="icon-small"></ion-icon>
+                    20 Top chefs
+                </div>
+                <div class="town-stats">
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="#">@foodpro_mbsa</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- end towns section-->
+
+
+    <!-- start testimonials section-->
     <section class="testimonials">
         <div class="row">
             <h2>Our customers can't live without us</h2>
@@ -245,7 +282,11 @@
             </div>
         </div>
     </section>
-    <section class="signup-plans">
+
+    <!-- end testimonials section-->
+
+    <!-- start signup-plans section-->
+    <section class="signup-plans" id="signup">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
@@ -266,7 +307,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a href="#" class="btn btn-ghost">Signup now</a>
+                        <a href="#" class="btn btn-full">Signup now</a>
                     </div>
                 </div>
             </div>
@@ -311,6 +352,10 @@
         </div>
 
     </section>
+
+    <!-- end signup-plans section-->
+
+    <!-- start contact-form section-->
     <section class="contact-form">
         <div class="row">
             <h2>We're happy to hear from you</h2>
@@ -360,6 +405,10 @@
             </form>
         </div>
     </section>
+
+    <!-- end signup-plans section-->
+
+    <!-- start footer-->
     <footer>
         <div class="row">
             <div>
@@ -381,6 +430,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- end footer-->
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
 </body>
